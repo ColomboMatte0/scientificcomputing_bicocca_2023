@@ -2,7 +2,7 @@
 # Scientific Computing with Python
 
 [Davide Gerosa](https://davidegerosa.com/)  - davide.gerosa@unimib.it  
-"Matteo Colombo"
+"Matteo Colom"
 aa
 University of Milano-Bicocca, 2023-2024.
 
