@@ -1,0 +1,24 @@
+name: Commit Check
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  check-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check README
+      run: |
+        if grep -q "Matteo Colombo" README.md; then
+          echo "Matteo Colombo found in README. Commit allowed."
+          exit 0
+        else
+          echo "Matteo Colombo not found in README. Commit not allowed."
+          exit 1
+        fi
